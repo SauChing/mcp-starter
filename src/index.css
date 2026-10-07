@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  
+  .font-mono, [data-mono="true"] {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom TradingView styling */
+:root {
+  --tv-dark-bg: #131722;
+  --tv-dark-panel: #1e222d;
+  --tv-dark-panel-hover: #262b3e;
+  --tv-dark-border: #2a2e39;
+  --tv-blue: #2962ff;
+  --tv-green: #089981;
+  --tv-green-hover: #0bb196;
+  --tv-red: #f23645;
+  --tv-red-hover: #f4505c;
+  --tv-text: #d1d4dc;
+  --tv-muted: #787b86;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2e39;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #434651;
+}
+
+/* Hide scrollbar for clean horizontal scrolls */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes pulse-green {
+  0%, 100% { background-color: transparent; }
+  50% { background-color: rgba(8, 153, 129, 0.25); }
+}
+
+@keyframes pulse-red {
+  0%, 100% { background-color: transparent; }
+  50% { background-color: rgba(242, 54, 69, 0.25); }
+}
+
+.flash-green {
+  animation: pulse-green 1.2s ease-out;
+}
+
+.flash-red {
+  animation: pulse-red 1.2s ease-out;
+}
+

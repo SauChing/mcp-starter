@@ -1,0 +1,6 @@
+{
+  "name": "TradingView Markets",
+  "description": "Comprehensive global financial markets overview featuring real-time indices, stocks heatmap, crypto, forex, commodities, yield curve, and interactive charting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
